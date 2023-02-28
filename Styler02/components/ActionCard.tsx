@@ -11,7 +11,7 @@ export default function ActionCard() {
       <Text style={styles.headingText}>Blog Card</Text>
     <View style={[styles.card, styles.elevatedCard]}>
         <View style={styles.headingContainer}>
-        <Text style={styles.headingText}>
+        <Text style={styles.headerText}>
             What's new in Javascript 21
         </Text>
         </View>
@@ -51,9 +51,37 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         marginLeft:6
     },
-    card:{},
-    elevatedCard:{},
-    headingContainer:{},
+    card:{
+        width:330,
+        height:360,
+        borderRadius:6,
+        marginVertical:12,
+        marginHorizontal:16
+    },
+    elevatedCard:{
+        backgroundColor:'#207398',
+        elevation:3,
+        shadowOffset:{
+            width:1,
+            height:1
+        },
+        shadowColor:'#333',
+        shadowOpacity:0.4
+    },
+    headingContainer:{
+        height:40,
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center'
+    },
+
+    headerText:{
+        color:'#F7CD2E',
+        fontSize:22,
+        fontWeight:'bold'
+        
+    },
+
     cardImage:{
         height:200
     },
@@ -62,12 +90,21 @@ const styles = StyleSheet.create({
         alignItems:'center',
         marginBottom:6
     },
-    footerContainer:{},
+    footerContainer:{
+        padding:8,
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-evenly'
+        
+    },
     socialLink:{
-        fontWeight:'bold',
-        flex:1,
+        
         textAlign:'center',
-        color:'#DDD101'
+        color:'#DDD101',
+        backgroundColor:'#242B2E',
+        paddingHorizontal:20,
+        paddingVertical:3,
+        borderRadius:6
     }
 
 })
