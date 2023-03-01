@@ -1,0 +1,1 @@
+this repo contains some basics react native projects!
