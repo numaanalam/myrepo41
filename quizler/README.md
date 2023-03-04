@@ -1,0 +1,1 @@
+This is a trivia app of computer related mcqs made in react native!
